@@ -1,0 +1,107 @@
+/* div{
+    width:500px;
+    height:500px;
+    background:orangered;
+    padding: 50px; 
+    margin: 50px;
+    padding-left: 100px;
+    border: 10px groove black;
+    border-radius: 50px;
+} */
+ *{
+    box-sizing: border-box;
+ }
+
+body{
+    margin:0px;
+    padding: 0px;
+    overflow-x:hidden;
+    width:100%;
+ }
+
+
+.header{
+    background: rgb(255, 255, 255);
+    width: 100vw;
+    height:100px;
+    font-family: "VT323", serif;
+    font-size: 60px;
+    font-optical-sizing: auto;
+    line-height: 100px;
+    text-align: center; 
+    
+}
+/* .sidebar{
+    background: green;
+    position: absolute; 
+    height: 100vh;
+    width:30vw;
+    right:0;
+     
+} */
+
+.main{
+    background: rgb(255, 255, 255);
+    width:100vw;
+    height:100vh;
+    padding: 5px;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+
+.shirt-component{
+    background:rgb(255, 255, 255);
+    position: relative;
+    width: 300px;
+    height:350px;
+    padding: 10px;
+    border:3px dotted white;
+    display:inline-block;
+    vertical-align: top;
+  
+
+}
+
+.name{
+    font-family: "VT323", serif;
+    font-size:24px;
+    text-align:center;
+    margin:0;
+    color:white;
+
+}
+
+.shirt-image{
+    display:block;
+    width:80%;
+    margin:auto;
+}
+
+.size, .color{
+    font-family: "VT323", serif;
+    font-size:18px;
+    text-align:center;
+    margin:0;
+    display:none;
+}
+
+.shirt-component:hover{
+    border:3px dotted black;
+}
+
+.shirt-component:hover .size{
+    display:block;
+}
+
+
+.shirt-component:hover .color{
+    display:block;
+}
+
+.shirt-component:hover .name{
+    display:block;
+    color:black;
+}
